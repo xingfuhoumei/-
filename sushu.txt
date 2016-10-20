@@ -1,0 +1,31 @@
+System.out.println("该程序是求20160913之后的一个素数");
+        int i;
+        int j;
+        for(i=20160913;;i++){
+            boolean flag=true;
+            for(j=2;j<i/2;j++){
+            if(i%j==0){
+            flag=false;
+            break;
+
+            }
+            else if (i%j !=0){
+                continue;
+
+            }
+            else{
+
+                break;
+
+            }
+
+            }
+
+            if (flag){
+            System.out.println(i);
+
+            break;
+            }
+        }
+    }
+}
